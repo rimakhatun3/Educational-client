@@ -27,7 +27,7 @@ const AddCourse = () => {
             
             console.log(courseData)
             
-              await fetch(`https://education-server-alpha.vercel.appcourse`,{
+              await fetch(`https://education-server-alpha.vercel.app/course`,{
                 method:"POST",
                 headers:{
                     "Content-type":"application/json",

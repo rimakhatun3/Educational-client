@@ -31,7 +31,7 @@ console.log(courseData)
         
         console.log(courseData)
         
-          await fetch(`https://education-server-alpha.vercel.appcourse/${courseData._id}`,{
+          await fetch(`https://education-server-alpha.vercel.app/course/${courseData._id}`,{
             method:"PATCH",
             headers:{
                 "Content-type":"application/json",
