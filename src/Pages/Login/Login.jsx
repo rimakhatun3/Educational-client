@@ -62,7 +62,7 @@ setError('')
 
     return (
         <div>
-   <h1 className='text-center text-3xl font-extrabold '>Register Now</h1>
+   <h1 className='text-center text-3xl font-extrabold '>Login Now</h1>
        <div className="hero min-h-screen bg-base-200 w-full">
        
         <div className="hero-content flex-col lg:flex-row-reverse justify-between gap-28 ">
