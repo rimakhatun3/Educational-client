@@ -49,18 +49,18 @@ export const router = createBrowserRouter([
             {
                 path:"course/editcourse/:id",
                 element:<EditCourse/>,
-                loader: ({params})=>fetch(`http://localhost:5000/course/${params.id}`)
+                loader: ({params})=>fetch(`https://education-server-alpha.vercel.appcourse/${params.id}`)
             },
             {
                 path:"course/payment/:id",
                 element:<Payment/>,
 
-                loader: ({params})=>fetch(`http://localhost:5000/course/${params.id}`)
+                loader: ({params})=>fetch(`https://education-server-alpha.vercel.appcourse/${params.id}`)
             },
             {
                 path:"course",
                 element:<Courses/>,
-                loader: ()=>fetch("http://localhost:5000/course")
+                loader: ()=>fetch("https://education-server-alpha.vercel.appcourse")
             },
         ]
     },

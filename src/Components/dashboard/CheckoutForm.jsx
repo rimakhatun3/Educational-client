@@ -15,7 +15,7 @@ const CheckoutForm = ({price,courseData}) => {
     const {user} = UseAuth()
 
     useEffect(()=>{
-      fetch("http://localhost:5000/create-payment-intent",{
+      fetch("https://education-server-alpha.vercel.appcreate-payment-intent",{
        method:"POST",
        headers:{
            "Content-type":"application/json",
@@ -91,7 +91,7 @@ const handleSubmit =async (e)=>{
             date:new Date(),
         
           }
-          fetch("http://localhost:5000/payment",{
+          fetch("https://education-server-alpha.vercel.apppayment",{
             method:"POST",
             headers:{
                 "Content-type":"application/json",

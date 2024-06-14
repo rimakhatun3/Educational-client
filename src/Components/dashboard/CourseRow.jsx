@@ -6,7 +6,7 @@ const CourseRow = ({course,index,handleDelete}) => {
 
     const {title,image_url,price,_id,quantity,instructor} = course || {}
     const onDelete = ()=>{
-        fetch(`http://localhost:5000/course/${_id}`,{
+        fetch(`https://education-server-alpha.vercel.appcourse/${_id}`,{
          method:"DELETE",
         
         })
